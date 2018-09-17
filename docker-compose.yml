@@ -1,0 +1,11 @@
+cacti:
+  image: urbn8/cacti
+  ports:
+   - "8080:80"
+   - "161:161"
+  volumes:
+   - /etc/localtime:/etc/localtime:ro
+   - ./backups/:/var/backups/
+   - ./:/opt/cacti
+  environment:
+   - TZ=Asia/Ho_Chi_Minh

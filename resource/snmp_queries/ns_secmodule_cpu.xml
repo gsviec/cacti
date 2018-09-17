@@ -1,0 +1,21 @@
+<securitymodule>
+	<name>Get SNMP NS Security Module Resource - CPU</name>
+	<description>Queries a host for statistics of the security module - CPU</description>
+	<oid_index>.1.3.6.1.4.1.3224.16.4.1.2.3</oid_index>
+	<fields>
+		<smIndex>
+			<name>Index</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>input</direction>
+			<oid>.1.3.6.1.4.1.3224.16.4.1.2.3</oid>
+		</smIndex>
+		<smCPU>
+			<name>CPU</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>output</direction>
+			<oid>.1.3.6.1.4.1.3224.16.4.1.3.3</oid>
+		</smCPU>
+	</fields>
+</securitymodule>

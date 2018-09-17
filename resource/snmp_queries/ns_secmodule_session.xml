@@ -1,0 +1,35 @@
+<securitymodule>
+	<name>Get SNMP NS Security Module Resource</name>
+	<description>Queries a host for statistics of the security module</description>
+	<oid_index>.1.3.6.1.4.1.3224.16.4.1.2.3</oid_index>
+	<fields>
+		<smIndex>
+			<name>Index</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>input</direction>
+			<oid>.1.3.6.1.4.1.3224.16.4.1.2.3</oid>
+		</smIndex>
+		<smSessAllocated>
+			<name>SessAllocated</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>output</direction>
+			<oid>.1.3.6.1.4.1.3224.16.4.1.9.3</oid>
+		</smSessAllocated>
+		<smSessMaximum>
+			<name>SessMaximum</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>output</direction>
+			<oid>.1.3.6.1.4.1.3224.16.4.1.10.3</oid>
+		</smSessMaximum>
+		<smSessFailed>
+			<name>SessFailed</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>output</direction>
+			<oid>.1.3.6.1.4.1.3224.16.4.1.11.3</oid>
+		</smSessFailed>
+	</fields>
+</securitymodule>
